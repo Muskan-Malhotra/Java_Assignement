@@ -18,15 +18,26 @@ public class AccountAL {
 		
 		System.out.println(ac);
 		
+		//remove from arraylist
 		ac.remove(0);
 		
 		System.out.println("Removed Element at index 0");
 		System.out.println(ac);
 		
+		//contains arraylist
 		boolean isPresent = ac.contains(a4);
 		System.out.println(isPresent);
-		boolean present = ac.contains(new Acc("Steve Hawkens",102,25000)); //when equals is not overriden
+		boolean present = ac.contains(new Acc("Steve Hawkens",102,25000)); //when equals is not overriden --> false
 		System.out.println("Steve is present or not? "+present);
+		
+		
+		boolean present2 = ac.contains(new Acc("Noel Shaw",103,10000)); //when equals is overriden --> true
+		System.out.println("Noel is present or not? "+present2);
+		
+		//set in arraylist
+		ac.set(0, new Acc("Stephen Hawkens",102,25000)); //earlier it was Steve
+		
+		System.out.println(ac);
 		
 	}
 }

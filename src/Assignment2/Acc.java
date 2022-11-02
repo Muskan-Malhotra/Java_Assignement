@@ -33,11 +33,17 @@ public class Acc {
         this.AccBalance = balance;
     }
 	
-
+	//this is important coz objects needs to be in string type to be in readable form
 	@Override
 	public String toString() {
 		return "AccHolderName=" + AccHN + " AccNo=" + AccNo + " AccBalance=" + AccBalance +"\n";
 	}
+	
+//	@Override
+//	public boolean equals(Object o) {
+//		//needs to typecast coz AccNo is not in Object Obvio!
+//		return this.AccNo == ((Acc)o).AccNo;
+//	}
 	
 	
 
